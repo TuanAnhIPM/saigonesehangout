@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saigonese Hang-out</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-[#0f0f1a] text-white">
+
+  <header id = "nav-bar" class="bg-[#0f0f1a] text-white shadow-md fixed top-0 w-full z-50">
+    <div class="elementor-container elementor-column-gap-default">
+      <div class="max-w-7xl mx-auto flex items-center h-20 px-4 justify-between">
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-[#c084fc] tracking-widest">
+          <a href="index.html">Saigonese <span class="text-[#38bdf8]">Hang-out</span></a>
+        </div>
+
+        <!-- Hamburger Button (Mobile Only) -->
+        <div class="md:hidden">
+          <button id="hamburger-btn" class="focus:outline-none">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Nav Menu (Desktop) -->
+        <nav class="hidden md:flex flex-1 justify-center space-x-9 font-bold text-lg">
+          <a href="index.html" class="hover:text-[#c084fc]">Home</a>
+          <a href="about.html" class="hover:text-[#c084fc]">About</a>
+          <a href="index.html#tours" class="hover:text-[#c084fc]">Tours</a>
+          <a href="blog.html" class="hover:text-[#c084fc]">Blog</a>
+          <a href="contact.html" class="hover:text-[#c084fc]">Contact</a>
+          
+        </nav>
+
+        <!-- Social Icons -->
+        <div class="hidden md:flex space-x-4 items-center">
+          <a href="https://www.instagram.com/saigonesehangout/" target="_blank" rel="noopener noreferrer">
+            <img src="/Icons/insta.svg" alt="Instagram" class="w-5 h-5" />
+          </a>
+          <a href="https://wa.me/+84978270038" target="_blank" rel="noopener noreferrer">
+            <img src="/Icons/whatsapp.svg" alt="WhatsApp" class="w-5 h-5" />
+          </a>
+          <a href="mailto:info@saigonesehangout.com" target="_blank" rel="noopener noreferrer">
+            <img src="/Icons/email.svg" alt="Email" class="w-5 h-5" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-all duration-500 ease-in-out bg-[#0f0f1a] px-4">
+      <nav class="flex flex-col py-4 space-y-3 font-bold text-lg">
+        <a href="index.html" class="hover:text-[#c084fc]">Home</a>
+          <a href="about.html" class="hover:text-[#c084fc]">About</a>
+          <a href="index.html#tours" class="hover:text-[#c084fc]">Tours</a>
+          <a href="blog.html" class="hover:text-[#c084fc]">Blog</a>
+          <a href="contact.html" class="hover:text-[#c084fc]">Contact</a>
+        <div class="flex space-x-4 pt-2">
+          <a href="https://www.instagram.com/saigonesehangout/" target="_blank" rel="noopener noreferrer">
+            <img src="/Icons/insta.svg" alt="Instagram" class="w-5 h-5" />
+          </a>
+          <a href="https://wa.me/+84978270038" target="_blank" rel="noopener noreferrer">
+            <img src="/Icons/whatsapp.svg" alt="WhatsApp" class="w-5 h-5" />
+          </a>
+          <a href="mailto:info@saigonesehangout.com" target="_blank" rel="noopener noreferrer">
+            <img src="/Icons/email.svg" alt="Email" class="w-5 h-5" />
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="relative h-screen w-full overflow-hidden">
+    <!-- Background Image -->
+    <img src="/images/A606.jpg" alt="Saigonese team" class="absolute inset-0 w-full h-full object-cover brightness-30 z-0" />
+
+    <!-- Overlay Content with backdrop blur -->
+    <div class="relative z-10 flex flex-col items-center justify-center text-center h-full px-4 sm:px-6 md:px-10">
+      <div class="bg-black/50 p-6 sm:p-10 rounded-xl max-w-3xl animate-fade-in-down">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-[#38bdf8]">About Saigonese Hang-out</h2>
+
+        <p class="text-base sm:text-lg md:text-xl text-gray-100 mb-4 leading-relaxed">
+          <strong>Saigonese Hang-out</strong> was born from a simple idea: to show travelers the <span class="text-white font-semibold">real Saigon</span> — beyond tourist spots and cookie-cutter experiences.
+        </p>
+
+        <p class="text-base sm:text-lg md:text-xl text-gray-100 mb-4 leading-relaxed">
+          Founded by a group of locals with a passion for food, stories, and two wheels, we turn each night into a ride of laughter, culture, and incredible eats.
+        </p>
+
+        <p class="text-base sm:text-lg md:text-xl text-gray-100 mb-4 leading-relaxed">
+          With our young, fun, English-speaking guides, you'll dive deep into Saigon’s tastiest corners. Bonus? We’ve got karaoke, rooftop vibes, and we’ll even snap amazing pics along the way 📸.
+        </p>
+
+        <p class="text-base sm:text-lg md:text-xl font-semibold text-[#c084fc] mt-4">
+          Come as a guest, leave as a friend. This is more than a tour — it’s a memory.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#0f172a] text-white pt-16 pb-12 px-6 sm:px-12 lg:px-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+
+      <!-- Logo + Socials -->
+      <div>
+        <img src="/logo/logo.png" alt="Saigonese Hang-out" class="h-20 mb-4">
+        <p class="text-sm text-gray-400 leading-relaxed">
+          A local-led community sharing authentic hangouts with you in the heart of Saigon.
+        </p>
+        <div class="flex gap-4 text-xl text-gray-400 mt-4">
+          <a href="#" class="hover:text-pink-400 transition"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-pink-400 transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-pink-400 transition"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="hover:text-pink-400 transition"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-base font-semibold text-white mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#" class="hover:text-white transition">Home</a></li>
+          <li><a href="#" class="hover:text-white transition">About</a></li>
+          <li><a href="#" class="hover:text-white transition">Tours</a></li>
+          <li><a href="#" class="hover:text-white transition">Blog</a></li>
+          <li><a href="#" class="hover:text-white transition">Term & Policy</a></li>
+          <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Payment Info -->
+      <div>
+        <h3 class="text-base font-semibold text-white mb-3">Payments are secured</h3>
+        <div class="flex gap-3 mb-4">
+          <img src="/icons/visa.png" alt="Visa" class="h-11">
+          <img src="/icons/mastercard.png" alt="MasterCard" class="h-11">
+          <img src="/icons/paypal.png" alt="PayPal" class="h-11">
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-base font-semibold text-white mb-4">Contact Info</h3>
+        <p class="text-sm text-gray-400">Feel free to reach out:</p>
+        <p class="text-lg font-semibold text-white mt-1">+84 978 270 038 <span class="text-green-400">– WhatsApp</span></p>
+        <p class="text-sm text-gray-400">Monday to Sunday, 8:30am – 6:00pm</p>
+        <p class="text-sm mt-2 text-pink-400 hover:text-pink-300 transition">thestoriesguys@gmail.com</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom note -->
+    <div class="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-500">
+      © 2025 Saigonese Hang-out. Made with ❤️ in Ho Chi Minh City.
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('hamburger-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      if (menu.classList.contains('max-h-0')) {
+        menu.classList.remove('max-h-0');
+        menu.classList.add('max-h-96'); // adjust this if content is taller
+      } else {
+        menu.classList.remove('max-h-96');
+        menu.classList.add('max-h-0');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
